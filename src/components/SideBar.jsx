@@ -19,7 +19,7 @@ const SideBar = () => {
         },
     ])
   return (
-      <div className={`${fullSideBar ? 'w-60' : 'w-16'} duration-300 w-full h-screen bg-gray-100 p-3 flex flex-col`}>
+      <div className={`${fullSideBar ? 'max-w-60' : 'max-w-16'} duration-300 w-full h-screen bg-gray-100 p-3 flex flex-col`}>
         {/* toogle button */}
     <div className="cursor-pointer" onClick={()=>setFullSideBar(prev=>!prev)}>
          {fullSideBar ? <AlignJustify /> : <X  /> }
